@@ -1,7 +1,7 @@
-package exercicios.contrato.services;
+package interfaces.contrato.services;
 
-import exercicios.contrato.entities.Contrato;
-import exercicios.contrato.entities.Parcela;
+import interfaces.contrato.entities.Contrato;
+import interfaces.contrato.entities.Parcela;
 
 import java.util.Calendar;
 import java.util.Date;

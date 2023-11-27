@@ -1,4 +1,4 @@
-package exercicios.contrato.entities;
+package interfaces.contrato.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

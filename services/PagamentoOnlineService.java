@@ -1,4 +1,4 @@
-package exercicios.contrato.services;
+package interfaces.contrato.services;
 
 public interface PagamentoOnlineService {
 

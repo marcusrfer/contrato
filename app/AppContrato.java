@@ -1,9 +1,9 @@
-package exercicios.contrato.app;
+package interfaces.contrato.app;
 
-import exercicios.contrato.entities.Contrato;
-import exercicios.contrato.entities.Parcela;
-import exercicios.contrato.services.ContratoService;
-import exercicios.contrato.services.PaypalService;
+import interfaces.contrato.entities.Contrato;
+import interfaces.contrato.entities.Parcela;
+import interfaces.contrato.services.ContratoService;
+import interfaces.contrato.services.PaypalService;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -26,6 +26,7 @@ public class AppContrato {
         int parcelas = sc.nextInt();
 
         Contrato contrato = new Contrato(numContrato, dataContrato, valorContrato);
+        //instancia um ContratoService para chamar o faturamento
         ContratoService cs = new ContratoService(new PaypalService());
 
         cs.faturamentoContrato(contrato, parcelas);

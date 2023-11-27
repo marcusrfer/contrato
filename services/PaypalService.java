@@ -1,4 +1,4 @@
-package exercicios.contrato.services;
+package interfaces.contrato.services;
 
 public class PaypalService implements PagamentoOnlineService {
     private static final double TAXA = 0.02;
